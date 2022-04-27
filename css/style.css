@@ -1,5 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    background-color: #000;
+    background-size: cover;
+    background-position: center top;
+    background-image: url("https://cdn.e-konomista.pt/uploads/2019/07/106182-netflix_1541693766.png");
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 1.5rem;
+    /* height: 100vh; */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.titulo-pagina {
+    color: #FF0000;
+    margin-top: 10px;
+}
+
+.subtitulo-pagina {
+    margin-top: 10px;
+}
+
+img {
+    max-height: 250px;
+}
+
+#filme, #titulo {
+    width: 30rem;
+    margin: 1rem;
+    height: 2rem;
+    border-radius: ;
+}
+
+.botao {
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #A71601;
+    color: #fff;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: red;
+    
 }
