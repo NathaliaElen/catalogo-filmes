@@ -16,7 +16,7 @@ body {
     background-repeat: no-repeat;
     color: #fff;
     font-size: 1.5rem;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .container {
@@ -75,10 +75,16 @@ img {
 .retangulo {
     position: absolute;
     width: 50%;
-    height: 50%;
+    height: 52%;
     background-color: #000;
     z-index: -1;
     border-radius: 0.5rem;
     opacity: 0.5;
     left: 20rem;
+}
+
+.filmes {
+    padding: 1.5rem;
+    border: 2px solid white;
+    width: 13rem;
 }
