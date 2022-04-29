@@ -36,9 +36,19 @@ function cadastrar() {
         listaDeFilmes.push(novoFilme)
         listaDeTitulos.push(novoTitulo)  
         erro.innerHTML = ``
-        //!vamos chamar uma função para mostrar os filmes
+        mostraFilmes()
       }
       document.querySelector(`#filme`).value = ``
-      document.querySelector(`#titulo`).value = ``
-    
+      document.querySelector(`#titulo`).value = ``  
+}
+
+function mostraFilmes() {
+    do {
+        catalogo.innerHTML += `
+          <div>
+            <img src= ${listaDeFilmes [i]} alt=${listaDeTitulos[i]}><figcaption>${listaDeTitulos[i]}</figcaption>
+          </div>      
+          `
+        i++
+    } while (i < listaDeFilmes.length);
 }
