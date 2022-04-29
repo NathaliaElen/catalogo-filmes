@@ -10,6 +10,7 @@ listaDeTitulos = [
     'Jogos Vorazes: A Esperança o Final',
     'O Espetacular Homem-Aranha 2: A Ameaça de Electro',
     "Como Eu Era Antes de Você"
+    //clube da luta, efeito borboleta
 ]
 
 let catalogo = document.querySelector('#catalogo')
@@ -20,4 +21,24 @@ for (i; i < listaDeFilmes.length; i++) {
     catalogo.innerHTML += `<div class="filmes">
       <img src=${listaDeFilmes[i]}><figcaption>${listaDeTitulos[i]}</figcaption>
     </div>`
+}
+
+let filmeRepetido = true
+
+function cadastrar() {
+    let novoFilme = document.querySelector('#filme').value
+
+    let novoTitulo =document.querySelector('#titulo').value
+
+    if (listaDeFilmes.includes(novoFilme) || (listaDeTitulos.toLowerCase()).includes(novoTitulo.toLowerCase())) {
+        erro.innerHTML = `Filme ${novoTitulo} já cadastrado.`
+      }else{
+        listaDeFilmes.push(novoFilme)
+        listaDeTitulos.push(novoTitulo)  
+        erro.innerHTML = ``
+        //!vamos chamar uma função para mostrar os filmes
+      }
+      document.querySelector(`#filme`).value = ``
+      document.querySelector(`#titulo`).value = ``
+    
 }
