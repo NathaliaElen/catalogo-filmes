@@ -6,32 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Filmes</title>
     <link rel="stylesheet" href="css/style.css?n=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <main class="container">
         <h1 class="titulo-pagina">Catálogo de Filmes</h1>
         <br><br>
-
-        <div class="retangulo"></div>
-
-        <div>
-            <label for="titulo">Insira o título do filme: <br>
-                <input type="text" name="titulo" id="titulo" placeholder="Digite aqui o nome do filme">
-            </label>
+        
+        <div class="retangulo coluna">          
+            <div class="coluna">
+                <label for="titulo">Insira o título do filme: </label>
+                <input type="text" name="titulo" id="titulo" placeholder="Ex: O Rei Leão">
+            </div>
+            
+            <div class="coluna">
+                <label for="filme">Insira a URL do filme: </label>
+                <input type="text" name="filme" id="filme" placeholder="Ex: https://br.web.img3.acsta.net/pictures/19/05/07/20/54/2901026.jpg">
+            </div>
+            
+            <button class="botao" type="submit" onclick="cadastrar()">Cadastrar</button>
+            <p id="erro"></p>
         </div>
-
-        <div>
-            <label for="filme">Insira a URL do filme: <br>
-                <input type="text" name="filme" id="filme" placeholder="Cole aqui o endereço da imagem do filme">
-            </label>
-        </div>
-
-        <button class="botao" type="submit" onclick="cadastrar()">Cadastrar</button>
-        <p id="erro"></p>
-
+        
         <h2 class="subtitulo-pagina">Lista de Filmes Favoritos</h2>
         <div id="catalogo">
-
         </div>
     </main>
     <script src="js/index.js?n=1"></script>  
