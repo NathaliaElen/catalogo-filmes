@@ -73,7 +73,6 @@ img {
 }
 
 .retangulo {
-    margin: 1rem;
     background-color: #00000050;
     border-radius: 0.5rem;
     max-width: 600px;
